@@ -8,6 +8,7 @@ const sass = require('sass');
 const sh = require('shelljs');
 
 const stylesPath = '../src/scss/styles.scss';
+// const stylesPath = '../dist/css/styles.css'
 const destPath = path.resolve(path.dirname(__filename), '../dist/css/styles.css');
 
 module.exports = function renderSCSS() {
@@ -24,12 +25,12 @@ module.exports = function renderSCSS() {
         sh.mkdir('-p', destPathDirname);
     }
 
-    postcss([ autoprefixer ]).process(results.css, {from: 'styles.css', to: 'styles.css'}).then(result => {
-        result.warnings().forEach(warn => {
-            console.warn(warn.toString())
-        })
-        fs.writeFileSync(destPath, result.css.toString());
-    })
+    // postcss([ autoprefixer ]).process(results.css, {from: 'styles.css', to: 'styles.css'}).then(result => {
+    //     result.warnings().forEach(warn => {
+    //         console.warn(warn.toString())
+    //     })
+    //     fs.writeFileSync(destPath, result.css.toString());
+    // })
 
 };
 
