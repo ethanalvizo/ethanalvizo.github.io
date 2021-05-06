@@ -2,7 +2,7 @@ import { nanoid } from 'nanoid';
 
 // HEAD DATA
 export const headData = {
-  title: '', // e.g: 'Name | Developer'
+  title: "Ethan's Portfolio", // e.g: 'Name | Developer'
   lang: '', // e.g: en, es, fr, jp
   description: '', // e.g: Welcome to my website
 };
@@ -28,7 +28,7 @@ export const aboutData = {
 export const experienceData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'Betterworth.png',
     title: 'Betterworth',
     info: 'Brought on as a Full-Stack Developer where I developed the social and notifications sytem of their application using the MERN stack and the MVC framework. Additionally, I brought the wireframes/mockups of our designers to life and altered them to be responsive/mobile-friendly.',
     info2: 'I created a script to automate the revision of our back-end content using the Google Drive API saving the company 2-3 days of work per content revision cycle.',
@@ -81,7 +81,7 @@ export const projectsData = [
 export const contactData = {
   cta: '',
   btn: '',
-  email: '',
+  email: 'ethanalvizo@gmail.com',
 };
 
 // FOOTER DATA
@@ -89,23 +89,13 @@ export const footerData = {
   networks: [
     {
       id: nanoid(),
-      name: 'twitter',
-      url: '',
-    },
-    {
-      id: nanoid(),
-      name: 'codepen',
-      url: '',
-    },
-    {
-      id: nanoid(),
       name: 'linkedin',
-      url: '',
+      url: 'https://www.linkedin.com/in/ethan-alvizo-19b5781a0/',
     },
     {
       id: nanoid(),
       name: 'github',
-      url: '',
+      url: 'https://github.com/ethanalvizo',
     },
   ],
 };
