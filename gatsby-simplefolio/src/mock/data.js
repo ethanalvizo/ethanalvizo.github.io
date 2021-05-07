@@ -50,7 +50,7 @@ export const experienceData = [
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'budget-bill.png',
+    img: 'new-budget.png',
     title: 'BudgetBill',
     info: 'BudgetBill records and displays user trends in expenses through various graphs to easily identify high spending areas. It allows for individual customization and user preferences to suit the app to their needs.',
     info2: 'The app features an authenthication system and a NoSQL database developed through Google Firebase.',
