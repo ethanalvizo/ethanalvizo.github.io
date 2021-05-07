@@ -28,7 +28,7 @@ export const aboutData = {
 export const experienceData = [
   {
     id: nanoid(),
-    img: 'Betterworth.png',
+    img: 'dashboard.png',
     title: 'Betterworth',
     info: 'Brought on as a Full-Stack Developer where I developed the social and notifications sytem of their application using the MERN stack and the MVC framework. Additionally, I brought the wireframes/mockups of our designers to life and altered them to be responsive/mobile-friendly.',
     info2: 'I created a script to automate the revision of our back-end content using the Google Drive API saving the company 2-3 days of work per content revision cycle.',
@@ -37,7 +37,7 @@ export const experienceData = [
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'intelliculture-dashboard.png',
     title: 'IntelliCulture',
     info: "Brought on as a Front-End Developer where I developed a dashboard for farmers to manage their equipment and crops using Geotab GO devices and their API. This allowed farmers a live view of their equipments' health to easily schedule repairs before the damage was irreversible.",
     info2: "Additionally, I created a central portal to showcase company products to potential investors/customers that led to an increase in sales pipeline of $200k annual recurring revenue",
@@ -50,7 +50,7 @@ export const experienceData = [
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'budget-bill.png',
     title: 'BudgetBill',
     info: 'BudgetBill records and displays user trends in expenses through various graphs to easily identify high spending areas. It allows for individual customization and user preferences to suit the app to their needs.',
     info2: 'The app features an authenthication system and a NoSQL database developed through Google Firebase.',
@@ -59,9 +59,9 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'my-resume.png',
     title: 'MyResume',
-    info: 'Resume Creator saves users the time and effort of customizing their own resume format by allowing them to input their own information in the template.',
+    info: 'MyResume saves users the time and effort of customizing their own resume format by allowing them to input their own information in the template.',
     info2: 'This app features a live view of the resume as they input details and the ability to export it as a pdf for actual use',
     url: '',
     repo: 'https://github.com/ethanalvizo/resume-template', // if no repo, the button will not show up
