@@ -64,7 +64,7 @@ export const projectsData = [
       'BudgetBill records and displays user trends in expenses through various graphs to easily identify high spending areas. It allows for individual customization and user preferences to suit the app to their needs.',
     info2:
       'The app features an authenthication system and a NoSQL database developed through Google Firebase.',
-    url: '',
+    url: 'https://ethan-expense-tracker.netlify.app/login',
     repo: 'https://github.com/ethanalvizo/expense-tracker', // if no repo, the button will not show up
   },
   {
@@ -75,7 +75,7 @@ export const projectsData = [
       'MyResume saves users the time and effort of customizing their own resume format by allowing them to input their own information in the template.',
     info2:
       'This app features a live view of the resume as they input details and the ability to export it as a pdf for actual use',
-    url: '',
+    url: 'https://ethanalvizo.github.io/resume-template/',
     repo: 'https://github.com/ethanalvizo/resume-template', // if no repo, the button will not show up
   },
   {
