@@ -91,7 +91,7 @@ const Experience = () => {
                         className="cta-btn cta-btn--hero"
                         href={url || '#!'}
                       >
-                        See Live
+                        Website
                       </a>
 
                       {repo && (
@@ -101,7 +101,7 @@ const Experience = () => {
                           className="cta-btn text-color-main"
                           href={repo}
                         >
-                          Website
+                          Code
                         </a>
                       )}
                     </div>
