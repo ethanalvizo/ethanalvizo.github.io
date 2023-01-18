@@ -20,7 +20,7 @@ const Intro = () => {
         and Angular but I am very comfortable with back-end principles like creating REST APIs with Node and Express. 
       </p>
       <p className="text-sm max-w-xl mb-6 font-bold">
-        Currently, I am expanding my skills in AR/VR and game development with technologies like Unity. Check out my latest projects below!
+        Currently, I am expanding my skills in AR/VR and game development with technologies like Unity. Check out my latest experiences and projects below!
       </p>
     </div>
   );

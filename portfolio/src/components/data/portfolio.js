@@ -1,20 +1,20 @@
 export default [
   {
-    title: "Terminal Website",
+    title: "VR Playground",
     imageUrl: "/public/assets/crop-management.png",
-    stack: ["HTML", "CSS", "JavaScript"],
+    stack: ["Unity", "C#", "Oculus Quest"],
     link: "https://github.com",
   },
   {
-    title: "Terminal Website",
+    title: "Grocery Assistant",
     imageUrl: "/public/assets/wellness-dashboard.png",
-    stack: ["HTML", "CSS", "JavaScript"],
+    stack: ["React Native", "AWS"],
     link: "https://github.com",
   },
   {
-    title: "Terminal Website",
+    title: "Hand Gesture Detector",
     imageUrl: "/public/assets/car.png",
-    stack: ["HTML", "CSS", "JavaScript"],
+    stack: ["Python", "Arduino", "Ultrasound"],
     link: "https://github.com",
   },
 ];
