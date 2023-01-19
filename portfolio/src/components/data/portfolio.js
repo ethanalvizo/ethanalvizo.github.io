@@ -15,6 +15,6 @@ export default [
     title: "Hand Gesture Detector",
     imageUrl: "/public/assets/hand-gesture-detector.png",
     stack: ["Python", "Arduino", "Ultrasound"],
-    link: "https://docs.google.com/presentation/d/1yOvbln0euZJmIH8IPSigYqhlVgEmFGSsmv1nIyOtnJA/edit#slide=id.p",
+    link: "https://docs.google.com/presentation/d/1yOvbln0euZJmIH8IPSigYqhlVgEmFGSsmv1nIyOtnJA/edit?usp=sharing",
   },
 ];

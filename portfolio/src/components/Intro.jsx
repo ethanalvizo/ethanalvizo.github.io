@@ -10,17 +10,16 @@ const Intro = () => {
         Biomedical Engineering Student & Software Developer
       </p>
       <p className="text-sm max-w-xl mb-6 font-bold">
-        I'm Ethan a 4th year engineering student at the University of Waterloo
-        passionate about software development and human-computer interaction
+        I'm a 4th year engineering student at the University of Waterloo
+        that's passionate about software development and human-computer interaction
         (HCI). I've done 5 coop placements as a software developer, primarily for
-        full-stack web applications.
+        full-stack web development.
       </p>
       <p className="text-sm max-w-xl mb-6 font-bold">
-        My expertise is in front-end development with technologies like React
-        and Angular but I am very comfortable with back-end principles like creating REST APIs with Node and Express. 
+        My expertise is in front-end with technologies like React or Angular. I can create responsive and visually appealing UIs for desktop/mobile applications. But I am still comfortable with back-end principles like creating REST APIs with Node/Express. 
       </p>
       <p className="text-sm max-w-xl mb-6 font-bold">
-        Currently, I am expanding my skills in AR/VR and game development with technologies like Unity. Check out my latest projects and experiences below!
+        Currently, I'm learning more about AR/VR development with technologies like Unity. Check out my latest projects and experiences below!
       </p>
     </div>
   );
