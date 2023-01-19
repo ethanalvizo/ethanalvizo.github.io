@@ -12,7 +12,7 @@ const Intro = () => {
       <p className="text-sm max-w-xl mb-6 font-bold">
         I'm Ethan a 4th year engineering student at the University of Waterloo
         passionate about software development and human-computer interaction
-        (HCI). I've done 5 coop placements as a software developer, primarily in
+        (HCI). I've done 5 coop placements as a software developer, primarily for
         full-stack web applications.
       </p>
       <p className="text-sm max-w-xl mb-6 font-bold">
@@ -20,7 +20,7 @@ const Intro = () => {
         and Angular but I am very comfortable with back-end principles like creating REST APIs with Node and Express. 
       </p>
       <p className="text-sm max-w-xl mb-6 font-bold">
-        Currently, I am expanding my skills in AR/VR and game development with technologies like Unity. Check out my latest experiences and projects below!
+        Currently, I am expanding my skills in AR/VR and game development with technologies like Unity. Check out my latest projects and experiences below!
       </p>
     </div>
   );
