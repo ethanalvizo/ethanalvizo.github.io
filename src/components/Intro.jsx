@@ -12,11 +12,10 @@ const Intro = () => {
       <p className="text-sm max-w-xl mb-6 font-bold">
         I'm a 4th year engineering student at the University of Waterloo
         that's passionate about software development and human-computer interaction
-        (HCI). I've done 5 coop placements as a software developer, primarily for
-        full-stack web development.
+        (HCI).
       </p>
       <p className="text-sm max-w-xl mb-6 font-bold">
-        My expertise is in front-end with technologies like React or Angular. I can create responsive and visually appealing UIs for desktop/mobile applications. But I am still comfortable with back-end principles like creating REST APIs with Node/Express. 
+        My expertise is in front-end web development with technologies like React. I can create responsive and visually appealing UIs for desktop/mobile applications. But I am still comfortable with back-end principles like creating REST APIs with Node/Express. 
       </p>
       <p className="text-sm max-w-xl mb-6 font-bold">
         Currently, I'm learning more about AR/VR development with technologies like Unity. Check out my latest projects and experiences below!

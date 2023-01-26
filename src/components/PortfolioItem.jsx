@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
 const PortfolioItem = ({ project }) => {
-  const { title, stack, link, imageUrl } = project;
+  const { title, stack, link, imageUrl, details } = project;
+
+  const [isExpanded, setIsExpanded] = useState(false);
 
   return (
     <a
@@ -9,6 +11,8 @@ const PortfolioItem = ({ project }) => {
       target="_blank"
       rel="noopener noreferrer"
       className="border-2 border-stone-900 dark:border-white rounded-md overflow-hidden"
+      onMouseEnter={() => setIsExpanded(true)}
+      onMouseLeave={() => setIsExpanded(false)}
     >
       <img
         src={imageUrl}
@@ -27,6 +31,15 @@ const PortfolioItem = ({ project }) => {
           ))}
         </p>
       </div>
+      {isExpanded && details && (
+        <ol className="list-disc mx-5">
+          {details.map((detail) => (
+            <li className="mt-2 mb-4 ml-5 text-base font-normal text-stone-500 dark:text-stone-400">
+              {detail}
+            </li>
+          ))}
+        </ol>
+      )}
     </a>
   );
 };
