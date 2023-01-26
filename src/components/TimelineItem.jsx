@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 
 const TimelineItem = ({ experience }) => {
-  const { year, title, company, stack, details } = experience;
+  const { year, title, company, stack, summary, details } = experience;
+
+  const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <ol className="flex flex-col md:flex-row relative border-l border-stone-200 dark:border-stone-700">
+    <ol
+      className="flex flex-col md:flex-row relative border-l border-stone-200 dark:border-stone-700"
+      onMouseEnter={() => setIsExpanded(true)}
+      onMouseLeave={() => setIsExpanded(false)}
+    >
       <li className="mb-10 ml-4">
         <div className="absolute w-3 h-3 bg-stone-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-stone-900 dark:bg-stone-700" />
         <p className="flex flex-wrap gap-4 flex-row items-center justify-start text-xs md:text-sm">
@@ -20,9 +26,20 @@ const TimelineItem = ({ experience }) => {
             </div>
           </div>
         </p>
-        <p className="my-2 text-base font-normal text-stone-500 dark:text-stone-400">
-          {details}
-        </p>
+
+        {isExpanded && details ? (
+          <ol className="list-disc">
+            {details.map((detail) => (
+              <li className="mt-2 mb-4 ml-5 text-base font-normal text-stone-500 dark:text-stone-400">
+                {detail}
+              </li>
+            ))}
+          </ol>
+        ) : (
+          <p className="my-2 text-base font-normal text-stone-500 dark:text-stone-400">
+            {summary}
+          </p>
+        )}
         {stack && (
           <p className="flex flex-wrap gap-2 flex-row items-center justify-start text-xs md:text-sm dark:text-white">
             <span className="font-semibold">Technologies:</span>
