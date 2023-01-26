@@ -10,7 +10,7 @@ const PortfolioItem = ({ project }) => {
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="border-2 border-stone-900 dark:border-white rounded-md overflow-hidden"
+      className="border-2 border-stone-900 dark:border-white rounded-md overflow-hidden h-min"
       onMouseEnter={() => setIsExpanded(true)}
       onMouseLeave={() => setIsExpanded(false)}
     >
