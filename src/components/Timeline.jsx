@@ -8,8 +8,8 @@ const Timeline = () => {
     <div className="flex flex-col md:flex-row justify-center my-20">
       <div className="w-full md:w-7/12">
         <Title>Experience</Title>
-        {timeline.map((exp) => (
-          <TimelineItem experience={exp} />
+        {timeline.map((exp, idx) => (
+          <TimelineItem experience={exp} key={idx} />
         ))}
       </div>
     </div>

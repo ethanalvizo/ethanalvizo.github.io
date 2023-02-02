@@ -24,8 +24,11 @@ const PortfolioItem = ({ project }) => {
           {title}
         </h3>
         <p className="flex flex-wrap gap-2 flex-row items-center justify-start text-xs md:text-sm dark:text-white">
-          {stack.map((item) => (
-            <span className="inline-block px-2 py-1 font-semibold border-2 border-stone-900 dark:border-white rounded-md">
+          {stack.map((item, idx) => (
+            <span
+              key={idx}
+              className="inline-block px-2 py-1 font-semibold border-2 border-stone-900 dark:border-white rounded-md"
+            >
               {item}
             </span>
           ))}
@@ -33,8 +36,11 @@ const PortfolioItem = ({ project }) => {
       </div>
       {isExpanded && details && (
         <ol className="list-disc mx-5">
-          {details.map((detail) => (
-            <li className="mt-2 mb-4 ml-5 text-base font-normal text-stone-500 dark:text-stone-400">
+          {details.map((detail, idx) => (
+            <li
+              key={idx}
+              className="mt-2 mb-4 ml-5 text-base font-normal text-stone-500 dark:text-stone-400"
+            >
               {detail}
             </li>
           ))}
