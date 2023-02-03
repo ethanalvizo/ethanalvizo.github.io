@@ -13,7 +13,6 @@ const Intro = () => {
             <li>Node.js</li>
             <li>D3.js</li>
             <li>TypeScript</li>
-            <li>Git</li>
           </ul>
         </div>
       </div>
