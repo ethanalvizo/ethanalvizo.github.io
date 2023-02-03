@@ -3,13 +3,39 @@ import { TypeAnimation } from "react-type-animation";
 
 const Intro = () => {
   return (
-    <div className="flex items-center justify-center flex-col text-center pt-20 pb-12">
-      <h1 className="text-4xl md:text-7xl mb-1 md:mb-3 font-bold">
+    <div className="flex flex-row pt-20 pb-12 gap-5">
+      <div className="nes-container with-title">
+        <p className="title">Skills</p>
+        <div className="lists">
+          <ul className="nes-list is-circle text-left text-sm">
+            <li>React</li>
+            <li>Three.js</li>
+            <li>Node.js</li>
+            <li>D3.js</li>
+            <li>TypeScript</li>
+            <li>Git</li>
+          </ul>
+        </div>
+      </div>
+      <div className="nes-container with-title">
+        <p className="title">Hello World</p>
+        <p className="text-sm">
+          My expertise is in front-end development with technologies like React
+          and Three.js. I enjoy creating novel and intuitive user interfaces for desktop and AR/VR applications.
+        </p>
+      </div>
+      {/* <h1 className="text-4xl md:text-7xl mb-1 md:mb-3 font-bold">
         Ethan Alvizo
       </h1>
       <p className=" font-press-start">
         <TypeAnimation
-          sequence={["Biomedical Engineer", 1000, "Biomedical Engineer & Software Developer", 1000]}
+          sequence={[
+            "Biomedical Engineer",
+            1000,
+            "Biomedical Engineer & Software Developer",
+            1000,
+          ]}
+          wrapper="p"
         />
       </p>
       <p className="text-sm max-w-xl mb-6 font-bold">
@@ -26,7 +52,7 @@ const Intro = () => {
       <p className="text-sm max-w-xl mb-6 font-bold">
         Currently, I'm learning more about AR/VR development with technologies
         like Unity. Check out my latest projects and experiences below!
-      </p>
+      </p> */}
     </div>
   );
 };
