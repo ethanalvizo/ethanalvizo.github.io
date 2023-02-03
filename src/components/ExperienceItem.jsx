@@ -7,7 +7,7 @@ const ExperienceItem = ({ experience, expand }) => {
 
   return (
     <div className="mb-5">
-      <label className="flex flex-row text-center items-center w-full items-baseline bg-stone-200">
+      <label className="flex flex-row text-center items-center w-full items-baseline bg-stone-200 pr-2 py-1">
         <input type="radio" className="nes-radio" name="answer" checked />
         <span className="flex flex-row w-full justify-between items-baseline">
           <span className="font-bold text-lg">{title}</span>
@@ -16,10 +16,10 @@ const ExperienceItem = ({ experience, expand }) => {
       </label>
       <p className="text-sm mb-3 ml-5 font-semibold">{summary}</p>
       {isExpanded && (
-        <div className="lists ml-9 mb-3 font-light text-sm">
-          <ul className="nes-list is-circle text-sm">
+        <div className="lists ml-9 mb-3 text-sm">
+          <ul className="nes-list is-circle">
             {details.map((detail) => (
-              <li>{detail}</li>
+              <li className="mb-2">{detail}</li>
             ))}
           </ul>
         </div>
