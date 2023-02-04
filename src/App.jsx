@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Intro from "./components/Intro";
 import Portfolio from "./components/Portfolio";
+import Quests from "./components/Quests";
 import Timeline from "./components/Timeline";
 
 function App() {
@@ -77,8 +78,9 @@ function App() {
         <div className="max-w-5xl w-11/12 mx-auto">
           {/* <Header /> */}
           <Intro />
-          <Experience />
-          <Portfolio />
+          <Quests />
+          {/* <Experience /> */}
+          {/* <Portfolio /> */}
           <Footer />
         </div>
       </div>

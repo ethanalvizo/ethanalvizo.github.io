@@ -26,7 +26,7 @@ export default [
   },
   {
     year: "2022",
-    title: "Front-End & Game Developer",
+    title: "Front-End/Game Developer",
     company: "AI Arena",
     stack: ["React", "D3", "ThreeJS", "WebGL", "GLSL"],
     summary:
