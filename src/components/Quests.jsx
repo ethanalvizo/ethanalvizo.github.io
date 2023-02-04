@@ -5,26 +5,58 @@ const Quests = () => {
   const [selected, isSelected] = useState(0);
 
   return (
-    <div className="flex flex-col gap-3">
-      <div className="nes-container with-title">
-        <p className="title">Completed Quests</p>
-        <div className="flex flex-col overflow-auto">
-          {timeline.map((exp, idx) => (
-            <Quest
-              experience={exp}
-              key={idx}
-              idx={idx}
-              selected={selected}
-              setSelected={isSelected}
-            />
-          ))}
-        </div>
-        <div className="nes-container with-title">
-          <p className="title">Rewards</p>
+    <div className="nes-container with-title">
+      <p className="title">Main Quests</p>
+      <div className="flex flex-col gap-2">
+        {timeline.map((exp, idx) => (
+          <Quest
+            experience={exp}
+            key={idx}
+            idx={idx}
+            selected={selected}
+            setSelected={isSelected}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const Quest = ({ experience, idx, selected, setSelected }) => {
+  const { title, company } = experience;
+
+  function handleSelectQuest(e) {
+    if (e.target.value) setSelected(idx);
+  }
+
+  return (
+    <>
+      <label
+        className={`flex px-2 py-1 ${
+          selected === idx ? "bg-stone-200" : ""
+        }`}
+      >
+        <input
+          type="radio"
+          className="nes-radio"
+          name="quest"
+          checked={idx === selected}
+          onChange={(e) => handleSelectQuest(e)}
+        />
+        <span className="flex justify-between w-full items-end">
+          <span className="text-sm">{title}</span>
+          <span className="text-xs italic">{company}</span>
+        </span>
+      </label>
+      {selected === idx && (
+        <div className="nes-container bg-stone-200 with-title pb-3 text-xs">
+          <p className="title text-sm bg-stone-200">Skills</p>
           <div className="lists mb-3">
-            <ul className="nes-list is-circle text-sm">
-              {timeline[selected].details.map((detail, idx) => (
-                <li key={idx}>{detail}</li>
+            <ul className="nes-list is-circle">
+              {timeline[idx].details.map((detail, idx) => (
+                <li className="mb-2" key={idx}>
+                  {detail}
+                </li>
               ))}
             </ul>
           </div>
@@ -38,36 +70,8 @@ const Quests = () => {
             ))}
           </p>
         </div>
-      </div>
-    </div>
-  );
-};
-
-const Quest = ({ experience, idx, selected, setSelected, questRef }) => {
-  const { title, company } = experience;
-
-  function handleSelectQuest(e) {
-    if (e.target.value) setSelected(idx);
-  }
-
-  return (
-    <label
-      className={`flex whitespace-nowrap p-2 ${
-        selected === idx ? "bg-stone-200" : ""
-      }`}
-    >
-      <input
-        type="radio"
-        className="nes-radio"
-        name="quest"
-        checked={idx === selected}
-        onChange={(e) => handleSelectQuest(e)}
-      />
-      <span className="flex justify-between w-full text-end">
-        <span className="text-sm">{title}</span>
-        <span className="text-xs italic">{company}</span>
-      </span>
-    </label>
+      )}
+    </>
   );
 };
 

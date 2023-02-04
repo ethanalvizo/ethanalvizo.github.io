@@ -11,14 +11,6 @@ import Timeline from "./components/Timeline";
 function App() {
   const [theme, setTheme] = useState("light");
 
-  // useEffect(() => {
-  //   if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-  //     setTheme("dark");
-  //   } else {
-  //     setTheme("light");
-  //   }
-  // }, []);
-
   const handleThemeSwitch = () => {
     setTheme(theme === "dark" ? "light" : "dark");
   };
@@ -74,9 +66,10 @@ function App() {
       >
         {theme === "dark" ? sun : moon}
       </button>
+      <img src={"/assets/new-york.webp"} style={{ width: "100%" }} />
       <div className="bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen font-press-start">
         <div className="max-w-5xl w-11/12 mx-auto">
-          {/* <Header /> */}
+          <Header />
           <Intro />
           <Quests />
           {/* <Experience /> */}
