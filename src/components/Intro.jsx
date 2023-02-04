@@ -3,7 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const Intro = () => {
   return (
-    <div className="flex flex-row pt-20 pb-12 gap-5">
+    <div className="flex flex-row pt-10 pb-12 gap-5">
       <div className="nes-container with-title">
         <p className="title">Skills</p>
         <div className="lists">

@@ -3,19 +3,24 @@ import { TypeAnimation } from "react-type-animation";
 
 const Header = () => {
   return (
-    <div className="">
-      <img src={"/assets/new-york.webp"} style={{ width: "100%" }} />
+    <div className="-mt-12">
       <section className="message-list">
-        <section class="message -left flex flex-row">
-          <i>
+        <section className="message -left flex flex-row w-full">
+          <div className="flex items-end">
             <img
               src={"/assets/ethan-pixel.png"}
               alt=""
-              width={60}
-              className=""
+              className="nes-avatar is-large"
             />
-          </i>
-          <div class="nes-balloon from-left text-sm ">
+          </div>
+          <div
+            className="nes-balloon from-left text-sm"
+            style={{ width: "100%" }}
+          >
+            {/* <p>
+              Welcome! My name is Ethan and I'm a Biomedical Engineering Student
+              at the University of Waterloo.
+            </p> */}
             <TypeAnimation
               sequence={[
                 "Welcome!",
