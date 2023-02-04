@@ -16,12 +16,17 @@ const Intro = () => {
           </ul>
         </div>
       </div>
-      <div className="nes-container with-title">
-        <p className="title">Hello World</p>
-        <p className="text-sm">
-          My expertise is in front-end development with technologies like React
-          and Three.js. I enjoy creating novel and intuitive user interfaces for desktop and AR/VR applications.
-        </p>
+      <div className="py-px" style={{ backgroundColor: "#212529" }}>
+        <div className="nes-container with-title is-dark">
+          {/* Add this to make it work in dark mode */}
+          {/* style={{ backgroundColor: "#1d1917" }} */}
+          <p className="title">Hello World</p>
+          <p className="text-sm text-left">
+            My expertise is in front-end development with technologies like
+            React and Three.js. I enjoy creating novel and intuitive user
+            experiences for desktop or AR/VR applications.
+          </p>
+        </div>
       </div>
       {/* <h1 className="text-4xl md:text-7xl mb-1 md:mb-3 font-bold">
         Ethan Alvizo
