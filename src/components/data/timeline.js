@@ -8,22 +8,22 @@ export default [
       "Improving legacy application to optimize casino profits and player experience",
     details: [
       "Building data visualization tools to optimize casino profits and player experience using Angular and D3",
-      "Improving user experience and application visibility of legacy ASP.NET product with C# and SQL patches",
+      "Improving user experience and application visibility of a legacy ASP.NET product with C# and SQL patches",
     ],
   },
-  {
-    year: "2022",
-    title: "Project Developer",
-    company: "UW Blueprint",
-    stack: ["REST API", "TypeScript", "Express", "Node", "Docker"],
-    summary:
-      "Developed RESTful API endpoints for a non-profit organization's book reviewing platform",
-    details: [
-      "Developed API endpoints using TypeScript, PostgreSQL, Express, and Node for a book reviewing platform",
-      "Tested HTTP Requests using Postman and simulated produciton environment with Docker",
-      "Collaborated with UI/UX designers to implement Figma mockups using ChakraUI, ensuring 100% responsiveness",
-    ],
-  },
+  // {
+  //   year: "2022",
+  //   title: "Project Developer",
+  //   company: "UW Blueprint",
+  //   stack: ["REST API", "TypeScript", "Express", "Node", "Docker"],
+  //   summary:
+  //     "Developed RESTful API endpoints for a non-profit organization's book reviewing platform",
+  //   details: [
+  //     "Developed API endpoints using TypeScript, PostgreSQL, Express, and Node for a book reviewing platform",
+  //     "Tested HTTP Requests using Postman and simulated produciton environment with Docker",
+  //     "Collaborated with UI/UX designers to implement Figma mockups using ChakraUI, ensuring 100% responsiveness",
+  //   ],
+  // },
   {
     year: "2022",
     title: "Front-End/Game Developer",

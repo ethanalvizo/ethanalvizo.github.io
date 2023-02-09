@@ -30,27 +30,23 @@ const Quest = ({ experience, idx, selected, setSelected }) => {
   }
 
   return (
-    <>
-      <label
-        className={`flex px-2 py-1 ${
-          selected === idx ? "bg-stone-200" : ""
-        }`}
-      >
+    <div className={selected === idx && "bg-stone-200"}>
+      <label className={"flex px-2 py-1"}>
         <input
           type="radio"
-          className="nes-radio"
+          className="nes-radio first:bg-red-500"
           name="quest"
           checked={idx === selected}
           onChange={(e) => handleSelectQuest(e)}
         />
         <span className="flex justify-between w-full items-end">
-          <span className="text-sm">{title}</span>
+          <span className="text-sm font-semibold">{title}</span>
           <span className="text-xs italic">{company}</span>
         </span>
       </label>
       {selected === idx && (
-        <div className="nes-container bg-stone-200 with-title pb-3 text-xs">
-          <p className="title text-sm bg-stone-200">Skills</p>
+        <div className="nes-container with-title pb-3 text-xs mx-5 mb-3 border-2">
+          <p className="title text-xs" style={{backgroundColor: "rgb(231 229 228)"}}>Skills</p>
           <div className="lists mb-3">
             <ul className="nes-list is-circle">
               {timeline[idx].details.map((detail, idx) => (
@@ -71,7 +67,7 @@ const Quest = ({ experience, idx, selected, setSelected }) => {
           </p>
         </div>
       )}
-    </>
+    </div>
   );
 };
 
