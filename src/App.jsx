@@ -74,7 +74,7 @@ function App() {
           <Quests />
           {/* <Experience /> */}
           {/* <Portfolio /> */}
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </div>
     </>
