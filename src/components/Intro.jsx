@@ -5,10 +5,13 @@ const Intro = () => {
     <div className="flex flex-row pt-10 pb-12 gap-5">
       <div className="nes-container with-title">
         <p className="title">Social</p>
-        <div className="flex flex-col justify-between items-center h-full">
+        <div className="flex flex-col justify-between items-center h-full w-full">
           <i class="nes-icon github"></i>
           <i class="nes-icon linkedin"></i>
           <i class="nes-icon gmail"></i>
+          <a class="nes-icon">
+            <img src="/assets/notes.png" alt=""/>
+          </a>
         </div>
       </div>
       <div style={{ backgroundColor: "#212529" }}>
