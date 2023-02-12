@@ -6,7 +6,10 @@ const Quests = () => {
 
   return (
     <div className="nes-container with-title">
-      <p className="title">Main Quests</p>
+      <p className="title">
+      <img src="/assets/rpg-game.png" alt="" className="nes-icon mr-6 p-px" />
+        Main Quests
+      </p>
       <div className="flex flex-col gap-2">
         {timeline.map((exp, idx) => (
           <Quest
