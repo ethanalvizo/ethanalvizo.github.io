@@ -2,9 +2,9 @@ import React from "react";
 
 const Intro = () => {
   return (
-    <div className="flex flex-row pt-10 pb-12 gap-5">
+    <div className="flex md:flex-row flex-col pt-10 pb-12 gap-5">
       <div className="nes-container">
-        <div className="flex flex-col justify-between items-center h-full w-full">
+        <div className="flex flex-row md:flex-col justify-between items-center h-full w-full">
           <i class="nes-icon github"></i>
           <i class="nes-icon linkedin"></i>
           <i class="nes-icon gmail"></i>
@@ -18,7 +18,11 @@ const Intro = () => {
           {/* Add this to make it work in dark mode */}
           {/* style={{ backgroundColor: "#1d1917" }} */}
           <p className="title">
-            <img src="/assets/software.png" alt="" className="nes-icon mr-6 p-px" />
+            <img
+              src="/assets/software.png"
+              alt=""
+              className="nes-icon mr-6 p-px"
+            />
             Hello World
           </p>
           <p className="text-sm text-left">

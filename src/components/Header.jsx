@@ -12,16 +12,12 @@ const Header = () => {
           }
           alt=""
           style={{ minWidth: "12%", height: "80%" }}
-          // className="bg-red-500"
+
         />
 
         <div
           className="nes-balloon from-left text-sm"
-          style={{
-            // minHeight: "100%",
-            // minWidth: "70%",
-            borderImageRepeat: "stretch",
-          }}
+          style={{ borderImageRepeat: "stretch" }}
         >
           <TypeAnimation
             sequence={[
