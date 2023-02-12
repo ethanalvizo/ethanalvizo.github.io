@@ -7,7 +7,7 @@ const Quests = () => {
   return (
     <div className="nes-container with-title">
       <p className="title">
-      <img src="/assets/rpg-game.png" alt="" className="nes-icon mr-6 p-px" />
+        <img src="/assets/rpg-game.png" alt="" className="nes-icon mr-6 p-px" />
         Main Quests
       </p>
       <div className="flex flex-col gap-2">
@@ -42,14 +42,21 @@ const Quest = ({ experience, idx, selected, setSelected }) => {
           checked={idx === selected}
           onChange={(e) => handleSelectQuest(e)}
         />
-        <span className="flex flex-col md:flex-row justify-between w-full  md:items-end">
+        <span className="flex flex-col md:flex-row justify-between w-full md:items-end">
           <span className="text-sm font-semibold">{title}</span>
           <span className="text-xs italic">{company}</span>
         </span>
       </label>
       {selected === idx && (
         <div className="nes-container with-title pb-3 text-xs mx-5 mb-3 border-2">
-          <p className="title text-xs" style={{backgroundColor: "rgb(231 229 228)"}}>Skills</p>
+          <p
+            className="title items-center"
+            style={{ backgroundColor: "rgb(231 229 228)" }}
+          >
+            {/* <img src="/assets/rpg-game.png" alt="" className="nes-icon mr-6 p-px" /> */}
+            <i class="nes-icon coin is-small"></i>
+            <span className="ml-2 text-xs">Rewards</span>
+          </p>
           <div className="lists mb-3">
             <ul className="nes-list is-circle">
               {timeline[idx].details.map((detail, idx) => (

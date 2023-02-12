@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Intro from "./components/Intro";
 import Portfolio from "./components/Portfolio";
 import Quests from "./components/Quests";
+import SideQuests from "./components/SideQuests";
 import Timeline from "./components/Timeline";
 
 function App() {
@@ -68,12 +69,12 @@ function App() {
       </button>
       <img src={"/assets/new-york.webp"} style={{ width: "100%" }} />
       <div className="bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen font-press-start">
-        <div className="max-w-5xl w-11/12 mx-auto">
+        <div className="max-w-5xl w-11/12 mx-auto flex flex-col gap-5">
           <Header />
           <Intro />
           <Quests />
-          {/* <Experience /> */}
-          {/* <Portfolio /> */}
+          <SideQuests />
+
           {/* <Footer /> */}
         </div>
       </div>
