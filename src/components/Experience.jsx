@@ -4,8 +4,8 @@ import ExperienceItem from "./ExperienceItem";
 
 const Experience = () => {
   return (
-    <div class="nes-container with-title">
-      <p class="title">Completed Quests</p>
+    <div className="nes-container with-title">
+      <p className="title">Completed Quests</p>
       {timeline.map((exp, idx) => (
         <ExperienceItem experience={exp} key={idx} />
       ))}

@@ -4,6 +4,8 @@ import { TypeAnimation } from "react-type-animation";
 const Header = () => {
   // style={{ marginTop: "-7vh" }}
   return (
+    <>
+    <img src={"/assets/new-york.webp"} style={{ width: "100%" }} />
     <section className="message-list" style={{ marginTop: "-7vh" }}>
       <section className="message -left flex flex-row items-end">
         <img
@@ -33,6 +35,7 @@ const Header = () => {
         </div>
       </section>
     </section>
+    </>
   );
 };
 

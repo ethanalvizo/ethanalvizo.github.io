@@ -6,25 +6,25 @@ const Intro = () => {
       <div className="nes-container">
         <div className="flex flex-row md:flex-col justify-between items-center h-full w-full">
           <a
-            class="nes-icon github hover:opacity-70"
+            className="nes-icon github hover:opacity-70"
             href="https://github.com/ethanalvizo"
             target="_blank"
             rel="noopener noreferrer"
           ></a>
           <a
-            class="nes-icon linkedin hover:opacity-70"
+            className="nes-icon linkedin hover:opacity-70"
             href="https://linkedin.com/in/ethan-alvizo"
             target="_blank"
             rel="noopener noreferrer"
           ></a>
           <a
-            class="nes-icon gmail hover:opacity-70"
+            className="nes-icon gmail hover:opacity-70"
             href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ethanalvizo@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           ></a>
           <a
-            class="nes-icon hover:opacity-70"
+            className="nes-icon hover:opacity-70"
             href="/assets/Ethan_s_Resume.pdf"
             download
           >

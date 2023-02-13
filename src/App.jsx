@@ -67,7 +67,7 @@ function App() {
       >
         {theme === "dark" ? sun : moon}
       </button>
-      <img src={"/assets/new-york.webp"} style={{ width: "100%" }} />
+      
       <div className="bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen font-press-start">
         <div className="max-w-5xl w-11/12 mx-auto flex flex-col gap-5">
           <Header />
