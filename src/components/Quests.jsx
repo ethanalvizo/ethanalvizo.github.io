@@ -42,7 +42,7 @@ const Quest = ({ experience, idx, selected, setSelected }) => {
           checked={idx === selected}
           onChange={(e) => handleSelectQuest(e)}
         />
-        <span className="flex flex-col md:flex-row justify-between w-full md:items-end">
+        <span className="flex flex-col md:flex-row justify-between w-full md:items-end pr-3">
           <span className="text-sm font-semibold">{title}</span>
           <span className="text-xs italic">{company}</span>
         </span>
