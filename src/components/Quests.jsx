@@ -43,21 +43,19 @@ const Quest = ({ experience, idx, selected, setSelected }) => {
           onChange={(e) => handleSelectQuest(e)}
         />
         <span className="flex flex-col md:flex-row justify-between w-full md:items-end pr-3">
-          <span className="text-sm font-semibold">
-            {title}
-          </span>
+          <span className="text-sm font-semibold">{title}</span>
           <span className="text-xs italic">{company}</span>
         </span>
       </label>
       {selected === idx && (
         <div className="nes-container with-title pb-3 text-xs mx-5 mb-3 border-2">
-          <p
-            className="title"
-            style={{ backgroundColor: "rgb(231 229 228)" }}
-          >
-            {/* <img src="/assets/rpg-game.png" alt="" className="nes-icon mr-6 p-px" /> */}
-            <i className="nes-icon coin is-small"></i>
-            <span className="ml-2 text-xs">Rewards</span>
+          <p className="title" style={{ backgroundColor: "rgb(231 229 228)" }}>
+            <img
+              src="/assets/target.png"
+              alt=""
+              className="nes-icon mr-6 p-px"
+            />
+            <span>Objectives</span>
           </p>
           <div className="lists mb-3">
             <ul className="nes-list is-circle">
@@ -69,7 +67,11 @@ const Quest = ({ experience, idx, selected, setSelected }) => {
             </ul>
           </div>
           <p className="flex items-center mb-3">
-            <img src="/assets/treasure.png" alt="" className="nes-icon mr-8 p-px" />
+            <img
+              src="/assets/treasure.png"
+              alt=""
+              className="nes-icon mr-8 p-px"
+            />
             <span>
               {timeline[selected].stack.map((tech, idx) => (
                 <span key={idx}>
@@ -81,12 +83,14 @@ const Quest = ({ experience, idx, selected, setSelected }) => {
           </p>
           <p className="flex items-center">
             <span>
-              <img src="/assets/accepted.png" alt="" className="nes-icon mr-8" />
+              <img
+                src="/assets/accepted.png"
+                alt=""
+                className="nes-icon mr-8"
+              />
             </span>
-            
             Jan 2023 - Current
           </p>
-
         </div>
       )}
     </div>

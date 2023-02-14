@@ -1,13 +1,9 @@
 import React, { useEffect, useState } from "react";
-import Contact from "./components/Contact";
-import Experience from "./components/Experience";
-import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Intro from "./components/Intro";
-import Portfolio from "./components/Portfolio";
+import Inventory from "./components/Inventory";
 import Quests from "./components/Quests";
 import SideQuests from "./components/SideQuests";
-import Timeline from "./components/Timeline";
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -67,15 +63,14 @@ function App() {
       >
         {theme === "dark" ? sun : moon}
       </button>
-      
+
       <div className="bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen font-press-start">
         <div className="max-w-5xl w-11/12 mx-auto flex flex-col gap-5">
           <Header />
           <Intro />
+          <Inventory />
           <Quests />
           <SideQuests />
-
-          {/* <Footer /> */}
         </div>
       </div>
     </>
