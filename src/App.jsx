@@ -68,8 +68,8 @@ function App() {
         <div className="max-w-5xl w-11/12 mx-auto flex flex-col gap-5">
           <Header />
           <Intro />
-          <Inventory />
           <Quests />
+          <Inventory />
           <SideQuests />
         </div>
       </div>
